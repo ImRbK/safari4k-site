@@ -71,7 +71,7 @@ export default function Home() {
             {/* Right: Twitch Embed */}
             <div className="rounded-3xl overflow-hidden border border-white/12 bg-black/30">
               <iframe
-                src="https://player.twitch.tv/?channel=safari4k&parent=localhost&muted=true"
+                src="https://player.twitch.tv/?channel=safari4k&parent=safari4k-site.vercel.app&muted=true"
                 height="360"
                 width="100%"
                 allowFullScreen
