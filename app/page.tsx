@@ -5,7 +5,6 @@ export default function Home() {
     <div className="space-y-10">
       {/* HERO / STREAM */}
       <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/8 backdrop-blur-xl">
-        {/* light overlay */}
         <div
           className="absolute inset-0 opacity-70"
           style={{
@@ -14,10 +13,10 @@ export default function Home() {
           }}
         />
 
-        <div className="relative p-7">
+        <div className="relative p-6 md:p-7">
           <div className="grid lg:grid-cols-[1.15fr_1fr] gap-6 items-center">
             {/* Left */}
-            <div className="space-y-4">
+            <div className="space-y-4 min-w-0">
               <div className="inline-flex items-center gap-2">
                 <span className="text-xs px-2 py-1 rounded-full border border-white/10 bg-white/10 text-white/70">
                   Live Hub
@@ -28,7 +27,6 @@ export default function Home() {
                 Safari<span className="text-[color:var(--gold)]">4K</span>
               </h1>
 
-              {/* TEXTO NOVO */}
               <p className="text-white/75 leading-relaxed">
                 Streamer • Semi Pro • MARROQUINO • Amigo do WINDOH
               </p>
@@ -57,34 +55,33 @@ export default function Home() {
                 </a>
               </div>
 
-              {/* status */}
               <div className="flex items-center gap-2 text-sm text-white/65">
                 <span className="w-2 h-2 rounded-full bg-zinc-300/60" />
                 Offline
                 <span className="text-white/35">•</span>
                 <span className="text-white/45">
-                 .
+                  embed aparece quando dás play
                 </span>
               </div>
             </div>
 
-            {/* Right: Twitch Embed */}
+            {/* Right: Twitch Embed (RESPONSIVO) */}
             <div className="rounded-3xl overflow-hidden border border-white/12 bg-black/30">
-  <div className="aspect-video w-full">
-    <iframe
-      src="https://player.twitch.tv/?channel=safari4k&parent=safari4k-site.vercel.app&muted=true"
-      className="w-full h-full"
-      allowFullScreen
-    />
-  </div>
-</div>
+              <div className="aspect-video w-full">
+                <iframe
+                  src="https://player.twitch.tv/?channel=safari4k&parent=safari4k-site.vercel.app&muted=true"
+                  className="w-full h-full"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* CARDS */}
       <section className="grid md:grid-cols-3 gap-4">
-        {/* Objetivo */}
-        <div className="rounded-3xl border border-white/10 bg-white/7 backdrop-blur-xl p-5">
+        <div className="rounded-3xl border border-white/10 bg-white/7 backdrop-blur-xl p-5 min-w-0">
           <div className="text-xs uppercase tracking-[0.25em] text-white/50">
             Objetivo
           </div>
@@ -96,8 +93,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Status */}
-        <div className="rounded-3xl border border-white/10 bg-white/7 backdrop-blur-xl p-5">
+        <div className="rounded-3xl border border-white/10 bg-white/7 backdrop-blur-xl p-5 min-w-0">
           <div className="text-xs uppercase tracking-[0.25em] text-white/50">
             Status da Stream
           </div>
@@ -109,8 +105,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Sobre */}
-        <div className="rounded-3xl border border-white/10 bg-white/7 backdrop-blur-xl p-5">
+        <div className="rounded-3xl border border-white/10 bg-white/7 backdrop-blur-xl p-5 min-w-0">
           <div className="text-xs uppercase tracking-[0.25em] text-white/50">
             Sobre este site
           </div>
