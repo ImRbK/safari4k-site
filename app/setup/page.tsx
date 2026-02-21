@@ -67,13 +67,13 @@ export default function SetupPage() {
   ];
 
   const streaming: Row[] = [
-    { label: "Microfone", value: "Depende dos dias" },
-    { label: "Câmara", value: "Uma batata" },
+    { label: "Microfone", value: "quad cast s" },
+    { label: "Câmara", value: "EMPRESTADA DO SEM PESCOÇO" },
   ];
 
   const outros: Row[] = [
-    { label: "Cadeira", value: "Uma da sala" },
-    { label: "Secretária", value: "Mesa da cozinha" },
+    { label: "Cadeira", value: "Uma VELHA DO IKEA" },
+    { label: "Secretária", value: "TABUA DO IKEA" },
     { label: "Internet", value: "Fraca" },
   ];
 
